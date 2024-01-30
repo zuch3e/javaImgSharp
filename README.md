@@ -8,4 +8,8 @@ It is structured in two packages:
 
 The main concept of the application is : 3 threads are started ( 1 is tasked with reading the image file, 2 is tasked with processing the said image and 3 is tasked with writing the result into a new file ). The first thread communicates the information to the second using a buffer object with syncronized methods. The second thread applies the convolution kernel in a primitive fashion and gives the information to the third thread through Pipes. Finally the third thread will write the result to a new image file. The whole process is timed using a time interface to get the respective running time of each task.
 
+Results after running the application:
+
+<img src="/Executable/unicorn.png" alt="results" style="height: 400px; width:800px;"/>
+
 A more in depth information please check the [Documentation](https://github.com/zuch3e/javaImgSharp/blob/main/Executable/Documentatie.pdf) and the [code comments](https://github.com/zuch3e/javaImgSharp/tree/main/src).
